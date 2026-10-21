@@ -1,3 +1,77 @@
-<a href="https://github.com/humbleYCH/clipy/releases/tag/v1.0.0">
-  免费下载 Windows 版
-</a>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f8fc">
+  <meta name="description" content="Clipy 是一款本地优先的 Windows 桌面助手。记录复制的文字和图片，快速搜索收藏，随手整理待办、草稿与画板。免费公测中。">
+  <title>Clipy 桌面助手 · 让复制与记录更顺手</title>
+  <link rel="icon" href="./assets/logo.png" type="image/png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="主导航">
+      <a class="brand" href="#" aria-label="Clipy 首页"><img src="./assets/logo.png" width="36" height="36" alt=""><span>Clipy<span class="brand-note">桌面助手</span></span></a>
+      <div class="nav-links"><a href="#features">功能</a><a href="#start">上手指南</a><a class="nav-download" href="#download">免费下载 <span aria-hidden="true">↗</span></a></div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <a class="release-badge" href="https://github.com/humbleYCH/clipy/releases/tag/v1.0.0"><span class="status-dot" aria-hidden="true"></span>v1.0.0 · 免费公测中 <span aria-hidden="true">→</span></a>
+        <p class="eyebrow">你的 Windows 随手工作台</p>
+        <h1 id="hero-title">复制的内容，<br><span>随时找回来。</span></h1>
+        <p class="hero-description">文字、图片、临时想到的事，都有地方放。<br class="desktop-break">从剪贴板到待办、草稿和画板，让手边的工作更顺手。</p>
+        <div class="hero-actions"><a class="button button-primary" href="https://github.com/humbleYCH/clipy/releases/download/v1.0.0/Clipy.Setup.1.0.0.exe"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4"/></svg>免费下载 Windows 版</a><a class="text-link" href="https://github.com/humbleYCH/clipy/releases/tag/v1.0.0">版本说明 <span aria-hidden="true">↗</span></a></div>
+        <p class="download-meta">Windows x64 <span>·</span> 安装包约 181 MB <span>·</span> 无需注册</p>
+        <div class="shortcut-hint"><span class="shortcut-icon" aria-hidden="true">⌘</span><p>用 <kbd>Alt</kbd><span class="plus">+</span><kbd>V</kbd> 随时唤出，继续手边的事。</p></div>
+      </div>
+
+      <div class="showcase">
+        <div class="showcase-heading"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>一个窗口，接住你的工作碎片</span><span class="preview-label">实机截图</span></div>
+        <div class="screen" id="screen-panel" role="tabpanel" aria-labelledby="tab-clipboard" tabindex="0">
+          <img id="product-screen" src="./assets/clipboard.png" width="1350" height="1100" alt="Clipy 剪贴板界面，集中展示图片和文字历史记录，支持预览、翻译和收藏" fetchpriority="high">
+        </div>
+        <div class="screenshot-tabs" role="tablist" aria-label="软件截图">
+          <button id="tab-clipboard" type="button" role="tab" aria-selected="true" aria-controls="screen-panel" data-screen="clipboard"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5H5v16h14V5h-4M9 3h6v5H9zM8 12h8m-8 4h5"/></svg>剪贴板</button>
+          <button id="tab-todos" type="button" role="tab" aria-selected="false" aria-controls="screen-panel" tabindex="-1" data-screen="todos"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 6 2 2 4-4m2 3h10M3 13h4m4 0h10M3 19h4m4 0h10"/></svg>待办清单</button>
+          <button id="tab-sketch" type="button" role="tab" aria-selected="false" aria-controls="screen-panel" tabindex="-1" data-screen="sketch"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 4 5 5M4 20l5-1L21 7l-4-4L5 15z"/></svg>随手画板</button>
+        </div>
+        <p class="screen-caption" id="screen-caption" aria-live="polite">复制过的文字和图片，放在一起，随时查找。</p>
+        <noscript><p class="screen-caption">更多截图：<a href="./assets/todos.png">待办清单</a> · <a href="./assets/sketch.png">随手画板</a></p></noscript>
+      </div>
+    </section>
+
+    <section class="features-section" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">少一点来回切换</p><h2 id="features-title">把常用的事，放在一起。</h2></div><p>随手复制，随手记下。<br>需要的时候，很快就能找到。</p></div>
+        <div class="feature-grid">
+          <article class="feature"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 5H5v16h14V5h-4M9 3h6v5H9zM8 12h8m-8 4h5"/></svg></span><h3>文字图片，都能留下</h3><p>自动记录复制的文字和图片，支持预览与再次粘贴，减少反复寻找原内容。</p></article>
+          <article class="feature"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6M8 10h4"/></svg></span><h3>搜索收藏，一找就到</h3><p>搜索内容或记录名称，收藏经常用到的信息，把常用素材留在手边。</p></article>
+          <article class="feature"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 5h11M8 3v2m4 0c-1 6-4 9-9 11m2-9c1 4 4 7 8 9m1 5 4-11 4 11m-7-3h6"/></svg></span><h3>复制之后，顺手翻译</h3><p>多渠道翻译与目标语言选择。选中一条文字，按 T 即可进入翻译预览。</p></article>
+          <article class="feature"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 6 2 2 4-4m2 3h10M3 13h4m4 0h10M3 19h4m4 0h10"/></svg></span><h3>待办草稿，随手整理</h3><p>记下临时任务，添加标签和子步骤；用草稿留下文字与粘贴的图片。</p></article>
+          <article class="feature"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m15 4 5 5M4 20l5-1L21 7l-4-4L5 15z"/></svg></span><h3>想不清楚，就画下来</h3><p>画流程、理关系、写几笔想法。画板自动保存，也能复制为图片继续使用。</p></article>
+          <article class="feature"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 15v6h16v-6"/></svg></span><h3>打包备份，换机带走</h3><p>一份文件导出记录、图片和随手内容，在另一台电脑合并导入，保留已有数据。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container getting-started" id="start" aria-labelledby="start-title">
+      <div class="section-heading"><div><p class="eyebrow">很快就能上手</p><h2 id="start-title">从下一次复制开始。</h2></div></div>
+      <ol class="steps"><li><span class="step-number">01</span><div><h3>安装，然后照常复制</h3><p>启动 Clipy，复制一段文字或一张图片。</p></div></li><li><span class="step-number">02</span><div><h3>按下 <kbd>Alt</kbd> + <kbd>V</kbd></h3><p>唤出窗口，查看或搜索复制过的内容。</p></div></li><li><span class="step-number">03</span><div><h3>选中记录，按 <kbd>Enter</kbd></h3><p>快速粘贴，也可以收藏、翻译或继续整理。</p></div></li></ol>
+      <div class="local-note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6z"/><path d="m8 12 3 3 5-6"/></svg><p><strong>本地优先，让内容留在自己手里。</strong>记录与随手内容保存在本机；使用在线翻译时，所选文本会发送至对应翻译服务。</p></div>
+    </section>
+
+    <section class="container download-section" id="download" aria-labelledby="download-title">
+      <div class="download-card"><div><span class="download-kicker">CLIPY FOR WINDOWS</span><h2 id="download-title">给你的桌面，添一个顺手的助手。</h2><p>v1.0.0 免费公测中，欢迎试用，也欢迎把建议告诉我。</p></div><div class="download-card-actions"><a class="button button-white" href="https://github.com/humbleYCH/clipy/releases/download/v1.0.0/Clipy.Setup.1.0.0.exe"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4"/></svg>下载 Windows 安装版</a><a href="https://github.com/humbleYCH/clipy/releases/tag/v1.0.0">查看版本说明与下载文件 <span aria-hidden="true">↗</span></a></div></div>
+      <p class="download-footnote">适用于 Windows x64 · 点击下载将从 GitHub 获取安装包。如下载未开始，可前往版本页面手动下载。</p>
+    </section>
+  </main>
+
+  <footer class="container footer"><a class="brand footer-brand" href="#"><img src="./assets/logo.png" width="28" height="28" alt=""><span>Clipy</span></a><p>一个持续打磨中的桌面小工具。由 YCH 用心维护。</p><div><a href="https://github.com/humbleYCH/clipy/releases">版本记录</a><a href="https://github.com/humbleYCH/clipy/issues">反馈建议 <span aria-hidden="true">↗</span></a></div></footer>
+</body>
+</html>
