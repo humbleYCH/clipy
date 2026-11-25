@@ -1,5 +1,6 @@
 // 仅切换本地截图；下载链接无需 JavaScript 即可使用。
 const screenshots = {
+  lock: { src: './assets/lock.png', alt: 'Clipy 应用锁屏界面，显示已锁定，需输入解锁密码才能继续使用', caption: '启用应用锁，锁定后凭密码访问；重要收藏还可单独加密保存。' },
   clipboard: { src: './assets/clipboard.png', alt: 'Clipy 剪贴板界面，集中展示图片和文字历史记录，支持预览、翻译和收藏', caption: '复制过的文字和图片，放在一起，随时查找。' },
   todos: { src: './assets/todos.png', alt: 'Clipy 待办界面，展示带有工作与生活标签的任务清单，可添加任务和子步骤', caption: '用标签和子步骤，把工作与生活的小事安排好。' },
   sketch: { src: './assets/sketch.png', alt: 'Clipy 画板界面，使用自由画笔、文字和图形整理想法', caption: '几笔勾勒一个想法，画布会自动保存。' },

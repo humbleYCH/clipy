@@ -363,6 +363,7 @@ kbd {
 
 .screenshot-tabs {
   display: flex;
+  flex-wrap: wrap;
   gap: 5px;
   justify-content: center;
   padding: 13px 0 9px;
